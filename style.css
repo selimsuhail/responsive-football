@@ -1,0 +1,318 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* common styles */
+body{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+}
+.main-centerd{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1050px;
+}
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 64px 0 40px 0;}
+h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+}
+p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    font-size: 16px;
+    padding: 20px 45px;
+    background: #E02C6D;
+    color: #fff;
+    transition: 300ms;
+}
+.btn:hover{
+    background: #18191F;
+}
+.btn i{
+    margin-left: 5px;
+    -webkit-animation-name: Floatingy;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@keyframes Floatingy{
+    0% {
+        -webkit-transform: translate(0, 0px);
+    }
+    65% {
+        -webkit-transform: translate(8px, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, -0px);
+    }
+}
+
+/* ---------------------------------
+                Header  
+-----------------------------------*/
+header {
+    background-color: #2D25A0;
+    padding: 8% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right{
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@keyframes Floatingx{
+    0% {
+        -webkit-transform: translate(0, 0px);
+    }
+    65% {
+        -webkit-transform: translate(0, 15px);
+    }
+    100% {
+        -webkit-transform: translate(0, -0px);
+    }
+}
+.header-right img{
+    width: 100%;
+    height: auto;
+    max-width: 650px;
+}
+
+/* ---------------------------------
+            Player Container  
+-----------------------------------*/
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 70px 0 100px;
+}
+.player{
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 100%;
+    height: auto;
+}
+.player h3{
+    margin: 15px 0;
+    line-height: 40px;
+}
+.player p{
+    margin: 10px 0 20px;
+}
+
+/* ---------------------------------
+             Gallery  
+-----------------------------------*/
+.gallary{
+    background-image: url(images/gray-bg.png);
+    text-align: center;
+    padding-bottom: 90px;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.photo{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.photo img{
+    width: 100%;
+    height: auto;
+}
+.hover-effect{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(41, 41, 41);
+    top: 0;
+    left: 0;
+    transition: 500ms;
+    text-align: center;
+    cursor: pointer;
+}
+.hover-effect i{
+    margin-top: 42%;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+}
+.photo:hover .hover-effect{
+    opacity: .8;
+    display: block;
+}
+
+/* ---------------------------------
+             Sponsors  
+-----------------------------------*/
+
+.sponsors{
+    text-align: center;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.sponsor{
+    display: flex;
+    justify-content: space-between;
+}
+.sponsor img{
+    max-width: 114px;
+    width: 100%;
+    height: auto;
+}
+
+/* ---------------------------------
+             Footer  
+-----------------------------------*/
+.footer-section{
+    padding: 70px 0 70px 0;
+    text-align: center;
+}
+.footer-logo{
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+.social-buttons{
+    display: flex;
+    justify-content: center;
+}
+.social-buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    color: #969BAB;
+    background: #E7E7E8;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-right: 14px;
+}
+.social-buttons a:hover{
+    opacity: .8;
+}
+.social-buttons a i{
+    font-size: 18px;
+}
+.footer-section p{
+    font-size: 18px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/* ---------------------------------
+             Responsive  
+-----------------------------------*/
+/* For Tab view */
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    .btn{
+        padding: 15px 30px;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 40px 20px 50px 20px;
+    }
+    .gallary{
+        padding-bottom: 40px;
+    }
+    .photos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        padding: 0 15px;
+    }
+    .sponsor img{
+        max-width: 100px;
+    }
+    .footer-logo{
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+}
+
+/* For Mobile view  */
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    header {
+        flex-direction: column;
+    }
+    .header-right{
+        margin-top: 50px;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: 40px 20px 50px 20px;
+    }
+    .gallary{
+        padding-bottom: 40px;
+    }
+    .photos{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        padding: 0 15px;
+    }
+    .sponsor{
+        flex-wrap: wrap;
+    }
+    .sponsor img{
+        max-width: 50px;
+    }
+    .footer-logo{
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+}
