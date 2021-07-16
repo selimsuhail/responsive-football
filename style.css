@@ -266,6 +266,9 @@ header {
         grid-gap: 15px;
         padding: 0 15px;
     }
+    .sponsor{
+        padding: 0 30px;
+    }
     .sponsor img{
         max-width: 100px;
     }
